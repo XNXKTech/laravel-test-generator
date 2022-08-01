@@ -1,0 +1,33 @@
+{
+    "name": "lain/laravel-test-generator",
+    "description": "Laravel package for generating api test automatically",
+    "keywords": ["laravel", "test", "generator"],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Lain\\LaravelTestGenerator\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "tangxuliang",
+            "email": "1297441127@qq.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "laravel/framework": "^8.0 || ^9.0",
+        "fakerphp/faker": "^1.20"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "orchestra/testbench": "^7.6"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Lain\\LaravelTestGenerator\\TestGeneratorProvider"
+            ]
+        }
+    }
+}
